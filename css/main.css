@@ -22,6 +22,10 @@ img {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
 .object-cover {
     object-fit: cover;
 }
@@ -74,6 +78,11 @@ img {
     box-shadow: 3px 3px #000;
 }
 
+.hidden {
+    display: none;
+}
+
+
 .header .panel {
     display: fixed;
     padding: 12px 24px;
@@ -81,7 +90,6 @@ img {
 }
 
 .header .logo a {
-    text-decoration: none;
     font-weight: 800;
     font-size: 26.25px;
     line-height: 31.5px;
@@ -142,6 +150,7 @@ img {
     right: 0;
     position: absolute;
     transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
+    transform: translate(100%) rotate(2deg);
 }
 
 .mobile-menu-container:target .mobile-menu-content {
@@ -170,7 +179,6 @@ img {
 .header .menu-header a {
     width: 40px;
     height: 40px;
-    text-decoration: none;
     color: #000;
     font-size: 36px;
     transition-property: all;
@@ -193,7 +201,6 @@ img {
 }
 
 .header .nav-menu a {
-    text-decoration: none;
     color: #000;
     line-height: 21.5px;
     font-weight: 700;
@@ -203,7 +210,6 @@ img {
 .header .subscribe {
     border: 4px solid #000;
     padding: 10px 0;
-    text-decoration: none;
     color: #000;
     font-weight: 700;
     font-size: 15.76px;
@@ -218,4 +224,30 @@ img {
 
 .header .subscribe .icon img {
     filter: invert(1);
+}
+
+.header .main-nav .start-icon {
+    height: 12px;
+    width: 12px;
+}
+
+.header .main-nav .flex {
+    gap: 16px;
+}
+
+.header .main-nav a {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #000;
+}
+
+.header .main-subscribe {
+    padding: 8px 16px;
+    color: #000;
+    background-color: #FFD15B;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    border-radius: 38px;
 }
