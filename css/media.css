@@ -7,10 +7,94 @@
     .header .logo a {
         font-size: 30px;
     }
+
+    .header .container {
+        padding: 16px;
+    }
+
+    .header .panel {
+        padding: 12px 24px;
+    }
+
+    .hero {
+        padding: 144px 0 64px;
+    }
+
+    .hero .container {
+        padding: 0 32px;
+    }
+
+    .hero .trending {
+        margin-bottom: 24px;
+    }
+
+    .hero .trending span {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .hero h1 {
+        margin-bottom: 32px;
+        line-height: 90px;
+    }
+
+    .hero p {
+        font-size: 24px;
+        margin-bottom: 32px;
+        line-height: 32px;
+    }
+
+    .hero .cubes span:nth-child(1) {
+        width: 128px;
+        height: 128px;
+        top: 40px;
+        left: 40px;
+    }
+
+    .hero .cubes span:nth-child(2) {
+        width: 96px;
+        height: 96px;
+        right: 80px;
+        top: 160px;
+    }
+
+    .hero .cubes span:nth-child(3) {
+        width: 112px;
+        height: 112px;
+        bottom: 80px;
+    }
+
+    .hero h1 {
+        font-size: 72px;
+    }
+
+    .hero .buttons button {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .hero .banner {
+        height: 384px;
+    }
+
+    .hero .banner span {
+        font-size: 16px;
+        line-height: 24px;
+    }
 }
 
 /* lg */
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+    .hero .lg-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        align-items: center;
+    }
+
+    .hero .banner {
+        transform: rotate(2deg);
+    }
+}
 
 /* xl */
 @media (min-width: 1280px) {
