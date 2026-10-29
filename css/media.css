@@ -4,266 +4,43 @@
         display: block;
     }
 
-    .sm-flex-row {
-        flex-direction: row;
-    }
-
-    .articles .card-info .flex {
-        flex-wrap: wrap;
-    }
-
-    .articles .info {
-        width: 50%;
-    }
-}
-
-/* width: 22.55%; */
-/* md */
-@media (min-width: 768px) {
-    .header .logo a {
-        font-size: 30px;
-        gap: 8px;
-    }
-
-    .header .container {
-        padding: 16px;
-    }
-
-    .header .panel {
-        padding: 12px 24px;
-        border-radius: 16px;
-    }
-
-    .header .mobile-menu-content {
-        max-width: 320px;
-    }
-
-    .header .menu-padding {
-        padding: 24px;
-        max-width: 320px;
-    }
-
-    .header .menu-header {
-        padding: 12px 0;
-        margin-bottom: 32px;
-    }
-
-    .header .menu-header span {
-        font-size: 24px;
-    }
-
-    .header .nav-menu {
-        gap: 24px;
-        margin-bottom: 32px;
-    }
-
-    .header .nav-menu a {
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .header .subscribe {
-        padding: 12px 0;
-        font-size: 18px;
-        line-height: 28px;
-    }
-
-    .header .subscribe:hover {
-        transform: translateY(-4px);
-    }
-
-    .header .nav-menu a:hover {
-        transform: translateY(-4px);
-    }
-
-    .header .subscribe .icon {
-        height: 18px;
-        margin-right: 8px;
-    }
-
-    .hero {
-        padding: 144px 0 64px;
-    }
-
-    .hero .grid {
-        gap: 64px;
-    }
-
-    .hero .container {
-        padding: 0 32px;
-    }
-
-    .hero .trending {
-        margin-bottom: 24px;
-        padding: 8px 16px;
-        line-height: 24px;
-    }
-
-    .hero .trending span {
-        font-size: 14px;
-        line-height: 20px;
-    }
-
-    .hero h1 {
-        margin-bottom: 32px;
-        line-height: 90px;
-    }
-
-    .hero p {
-        font-size: 24px;
-        margin-bottom: 32px;
-        line-height: 32px;
-        padding: 16px;
-    }
-
-    .hero .cubes span:nth-child(1) {
-        width: 128px;
-        height: 128px;
-        top: 40px;
-        left: 40px;
-    }
-
-    .hero .cubes span:nth-child(2) {
-        width: 96px;
-        height: 96px;
-        right: 80px;
-        top: 160px;
-    }
-
-    .hero .cubes span:nth-child(3) {
-        width: 112px;
-        height: 112px;
-        bottom: 80px;
-    }
-
-    .hero h1 {
-        font-size: 72px;
-    }
-
-    .hero .buttons button {
-        font-size: 20px;
-        line-height: 28px;
-        padding: 16px 32px;
-        box-shadow: 6px 6px #000;
-    }
-
-    .hero .buttons button:hover {
-        translate: 6px 6px;
-        box-shadow: none
-    }
-
-    .hero .buttons button:nth-child(1) {
-        margin-right: 16px;
-    }
-
-    .hero .button-icon {
-        width: 20px;
-        margin-right: 8px;
-    }
-
-    .hero .banner {
-        height: 384px;
-    }
-
-    .hero .banner span {
-        font-size: 16px;
-        line-height: 24px;
-    }
-
-    .articles {
-        padding: 80px 0;
-    }
-
-    .articles .container {
-        padding: 0 24px;
-    }
-
-    .articles .grid {
-        gap: 32px;
-    }
-
-    .articles h3 {
-        font-size: 48px;
-        line-height: 48px;
-        margin-bottom: 48px;
-    }
-
-    .articles .card {
-        padding: 32px;
-    }
-
-    .articles .card-img {
-        width: 160px;
-        height: 128px;
-        margin-bottom: 12px;
-    }
-
-    .articles .card-img span {
-        top: -10px;
-        right: -10px;
-    }
-
-    .articles .card .badge {
-        font-size: 12px;
-        line-height: 16px;
-        padding: 4px 8px;
-    }
-
-    .articles .card-info span {
-        margin-bottom: 12px;
-    }
-
-    .articles .new .card-info h4 {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 12px;
-    }
-
-    .articles .new .card-info p {
-        font-size: 18px;
-        line-height: 29.25px;
-        margin-bottom: 16px;
-    }
-
-    .articles .card-info .badge {
-        padding: 4px 12px;
-    }
-
-    .articles .articles-head span {
-        padding: 8px 16px;
-        line-height: 24px;
-        font-size: 16px;
-    }
-
-    .articles .info {
-        font-size: 12.25px;
+    .articles .meta {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 
 /* lg */
 @media (min-width: 1024px) {
     .hero .lg-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(1, 1fr);
+        grid-template-columns: repeat(2, minmax(0, 1fr));
         align-items: center;
     }
 
     .hero .banner {
-        transform: rotate(2deg);
+        rotate: 2deg;
+    }
+
+    .articles .lg-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+
+    .articles .articles-content {
+        grid-column: span 2 / span 2;
+    }
+
+    .articles .articles-info {
+        grid-column: span 1 / span 1;
     }
 
     .articles .card.grid {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-areas: 
-        "img info info";
+        grid-template-columns: auto minmax(0, 1fr);
+        column-gap: 1.5rem;
+        align-items: start;
     }
 
     .articles .card-img {
-        grid-area: img;
-    }
-
-    .articles .card-info {
-        grid-area: info;
+        margin-bottom: 0;
     }
 }
 
@@ -277,19 +54,16 @@
         display: block;
     }
 
-    .xl-display-flex {
-        display: flex;
+    .articles .meta {
+        grid-template-columns: repeat(8, minmax(0, 1fr));
     }
 
-    .container {
-        max-width: 80rem;
-        margin: auto;
+    .articles .info:nth-child(1) {
+        grid-column: span 3;
     }
 
-    .articles .info {
-        width: 25%;
+    .articles .info:nth-child(2),
+    .articles .info:nth-child(3) {
+        grid-column: span 2;
     }
 }
-
-/* xxl */
-@media (min-width: 1536px) {}

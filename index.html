@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/media.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>Document</title>
 </head>
 
@@ -95,15 +95,15 @@
                     <p class="border box-shadow">Raw, unfiltered content about tech, design, and culture. No
                         sugar-coating, just pure truth that
                         hits different.</p>
-                    <div class="buttons flex">
-                        <button class="flex align-items-center">
+                    <div class="buttons flex align-items-center">
+                        <button class="btn flex align-items-center justify-content-center">
                             <div class="button-icon">
                                 <img class="w-100 h-100 object-cover" src="images/icons/rocket-solid-full.png"
                                     alt="rocket-icon">
                             </div>
                             START READING
                         </button>
-                        <button class="flex align-items-center">
+                        <button class="btn flex align-items-center justify-content-center">
                             <div class="button-icon">
                                 <img class="w-100 h-100 object-cover" src="images/icons/play-solid-full.png"
                                     alt="play-icon">
@@ -112,8 +112,10 @@
                         </button>
                     </div>
                 </div>
-                <div class="banner">
-                    <img class="w-100 h-100 object-cover" src="images/hero-img.png" alt="hero-img">
+                <div class="banner-wrap">
+                    <div class="banner">
+                        <img class="w-100 h-100 object-cover" src="images/hero-img.png" alt="hero-img">
+                    </div>
                     <span class="border box-shadow">FEATURED</span>
                 </div>
             </div>
@@ -121,11 +123,11 @@
     </div>
     <div id="latest-articles" class="articles border">
         <div class="container">
-            <div class="grid">
+            <div class="grid lg-grid">
                 <div class="articles-content flex flex-column">
-                    <div class="articles-head flex justify-content-between align-items-start">
+                    <div class="articles-head flex justify-content-between align-items-center">
                         <h3>LATEST ARTICLES</h3>
-                        <span class="box-shadow hidden sm-display-block">🔥 FRESH CONTENT</span>
+                        <span class="border box-shadow hidden sm-display-block">🔥 FRESH CONTENT</span>
                     </div>
                     <div class="articles-cards flex flex-column">
                         <div class="card grid new bg-white">
@@ -140,7 +142,7 @@
                                 <p>Exploring the psychological impact of bold, unapologetic design choices on user
                                     engagement and
                                     brand perception in the digital age.</p>
-                                <div class="flex flex-column sm-flex-row">
+                                <div class="meta grid">
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
                                             <img class="w-100 h-100 object-cover" src="images/icons/user-solid-full.png"
@@ -150,15 +152,15 @@
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/calendar-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/calendar-solid-full.png" alt="user-icon">
                                         </div>
                                         JAN 8, 2025
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/clock-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/clock-solid-full.png" alt="user-icon">
                                         </div>
                                         5 MIN READ
                                     </div>
@@ -181,9 +183,10 @@
                             <div class="card-info flex flex-column">
                                 <span class="badge border box-shadow">DESIGN</span>
                                 <h4>Typography That Screams</h4>
-                                <p>How to choose and implement bold typography that commands attention without sacrificing
+                                <p>How to choose and implement bold typography that commands attention without
+                                    sacrificing
                                     readability or user experience.</p>
-                                <div class="flex flex-column sm-flex-row">
+                                <div class="meta grid">
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
                                             <img class="w-100 h-100 object-cover" src="images/icons/user-solid-full.png"
@@ -193,15 +196,15 @@
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/calendar-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/calendar-solid-full.png" alt="user-icon">
                                         </div>
                                         JAN 6, 2025
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/clock-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/clock-solid-full.png" alt="user-icon">
                                         </div>
                                         7 MIN READ
                                     </div>
@@ -224,9 +227,10 @@
                             <div class="card-info flex flex-column">
                                 <span class="badge border box-shadow">CULTURE</span>
                                 <h4>The Anti-Instagram Movement</h4>
-                                <p>Young creators are abandoning polished feeds for raw, authentic content that celebrates
+                                <p>Young creators are abandoning polished feeds for raw, authentic content that
+                                    celebrates
                                     imperfection and real human connection.</p>
-                                <div class="flex flex-column sm-flex-row">
+                                <div class="meta grid">
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
                                             <img class="w-100 h-100 object-cover" src="images/icons/user-solid-full.png"
@@ -236,15 +240,15 @@
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/calendar-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/calendar-solid-full.png" alt="user-icon">
                                         </div>
                                         JAN 4, 2025
                                     </div>
                                     <div class="info flex align-items-center">
                                         <div class="status-icon">
-                                            <img class="w-100 h-100 object-cover" src="images/icons/clock-solid-full.png"
-                                                alt="user-icon">
+                                            <img class="w-100 h-100 object-cover"
+                                                src="images/icons/clock-solid-full.png" alt="user-icon">
                                         </div>
                                         4 MIN READ
                                     </div>
@@ -260,17 +264,47 @@
                         </div>
                     </div>
                     <div class="load-articles">
-                        <button>
+                        <button class="btn">
                             &plus; LOAD MORE ARTICLES
                         </button>
                     </div>
                 </div>
                 <div class="articles-info flex flex-column">
-                    <div class="card">
+                    <div class="side-card bg-white">
                         <h4>TRENDING NOW</h4>
+                        <div class="trends flex flex-column">
+                            <div class="trend flex trend-1">
+                                <span>01</span>
+                                <div class="trend-info">
+                                    <h5>The Death of Minimalism</h5>
+                                    <p>12.5K reads • 🔥 Trending</p>
+                                </div>
+                            </div>
+                            <div class="trend flex trend-2">
+                                <span>02</span>
+                                <div class="trend-info">
+                                    <h5>Chaos as a Design System</h5>
+                                    <p>8.2K reads • ⚡ Rising</p>
+                                </div>
+                            </div>
+                            <div class="trend flex trend-3">
+                                <span>03</span>
+                                <div class="trend-info">
+                                    <h5>Digital Rebellion</h5>
+                                    <p>6.7K reads • 💥 Hot</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card">
+                    <div class="side-card bg-white">
                         <h4>CATEGORIES</h4>
+                        <div class="boxs flex flex-column">
+                            <div class="box box-1 border">TECH (24)</div>
+                            <div class="box box-2 border">DESIGN (18)</div>
+                            <div class="box box-3 border">CULTURE (15)</div>
+                            <div class="box box-4 border">OPINION (12)</div>
+                            <div class="box box-5 border">TUTORIALS (9)</div>
+                        </div>
                     </div>
                 </div>
             </div>
