@@ -42,6 +42,16 @@
     .articles .card-img {
         margin-bottom: 0;
     }
+
+    .xl-flex-row {
+        flex-direction: row;
+    }
+
+    .authors-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem
+    }
+
 }
 
 /* xl */
@@ -65,5 +75,10 @@
     .articles .info:nth-child(2),
     .articles .info:nth-child(3) {
         grid-column: span 2;
+    }
+
+    .authors-cards {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem
     }
 }
