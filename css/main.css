@@ -766,41 +766,50 @@ button {
     background-color: #DCAFF5;
 }
 
-.authors {
+section {
     padding: 5rem 0;
+}
+
+section .container {
+    padding: 0 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.authors {
     background-color: #FFD230;
     position: relative;
 }
 
 .authors .container {
-    padding: 0 1.5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
     z-index: 1;
 }
 
-.authors header {
+section header {
     z-index: inherit;
 }
 
-.authors header h3 {
+section header h3 {
     font-size: 3rem;
     font-weight: 900;
 }
 
-.authors header p {
+section header p {
     font-size: 1.25rem;
     font-weight: 600;
     color: #525252;
 }
 
-.authors header .line {
+section header .line {
     width: 8rem;
     height: .5rem;
-    transform: rotate(1deg);
     background-color: #000;
     margin: 1rem auto 0;
+}
+
+.authors header .line {
+    transform: rotate(1deg);
 }
 
 .authors .authors-cards {
@@ -945,4 +954,8 @@ button {
     bottom: 2.5rem;
     left: 2.5rem;
     transform: rotate(-12deg);
+}
+
+.community header .line {
+    transform: rotate(-1deg);
 }
