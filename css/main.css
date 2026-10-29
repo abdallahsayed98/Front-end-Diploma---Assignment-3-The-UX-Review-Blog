@@ -1,22 +1,27 @@
 * {
     box-sizing: border-box;
-    font-family: Exo, sans-serif;
 }
 
 body {
     margin: 0;
     font-family: Exo, sans-serif;
+    background-color: #fafafa;
     font-size: 1rem;
-    color:#333;
 }
 
-.body::selection {
+::selection {
     background-color: #FFD15B;
-    color: #000;
+    color: #111;
 }
 
-h1, h2, h3, h4, h5, h6, p {
-    margin-top: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
 }
 
 img {
@@ -25,6 +30,15 @@ img {
 
 a {
     text-decoration: none;
+    color: inherit;
+}
+
+button {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: 0;
+    cursor: pointer;
 }
 
 .object-cover {
@@ -70,6 +84,10 @@ a {
     align-items: center;
 }
 
+.align-items-start {
+    align-items: flex-start;
+}
+
 .grid {
     display: grid;
 }
@@ -100,7 +118,7 @@ a {
 
 .header .panel {
     padding: 10.5px 21px;
-    border-radius: 16px;
+    border-radius: 14px;
 }
 
 .header .logo a {
@@ -113,7 +131,7 @@ a {
     color: #111;
 }
 
-.header .logo span:nth-child(2){
+.header .logo span:nth-child(2) {
     color: #ff6900;
 }
 
@@ -135,7 +153,7 @@ a {
     width: 50%;
 }
 
-.header .mobile-menu-container { 
+.header .mobile-menu-container {
     z-index: 5000;
     background-color: #000C;
     position: fixed;
@@ -159,10 +177,10 @@ a {
     border-left: 4px solid #000;
     width: 80%;
     max-width: 280px;
-    background-color: #fff;
     top: 0;
     right: 0;
     position: absolute;
+    box-shadow: 6px 6px #000;
     transition: transform 0.3s cubic-bezier(0.17, 0.67, 0.83, 0.67);
     transform: translate(100%) rotate(2deg);
 }
@@ -176,24 +194,21 @@ a {
 }
 
 .header .menu-header {
-    border-color: #000 transparent;
-    border-width: 2px;
-    padding: 10px 0;
-    border-style: solid;
+    padding: 10.5px 0;
     margin-bottom: 28px;
+    border: solid #000;
+    border-width: 2px 0;
 }
 
 .header .menu-header span {
     font-weight: 900;
     font-size: 21px;
-    color: #000;
     transform: rotate(-1deg);
 }
 
 .header .menu-header a {
     width: 40px;
     height: 40px;
-    color: #000;
     font-size: 36px;
     transition-property: all;
     transition-duration: .15s;
@@ -205,35 +220,39 @@ a {
 }
 
 .header .nav-menu a:hover {
-    transform: translateY(-3px);
-    color: #ff6900;
+    transform: translateY(-3.5px);
+    color: #ff7a50;
 }
 
 .header .nav-menu {
-    gap: 28px;
+    gap: 21px;
     margin-bottom: 28px;
 }
 
 .header .nav-menu a {
-    color: #000;
-    line-height: 21.5px;
+    line-height: 24.5px;
     font-weight: 700;
     font-size: 17.5px;
+    transition: transform .15s;
 }
 
 .header .subscribe {
     border: 4px solid #000;
-    padding: 10px 0;
-    color: #000;
+    padding: 10.5px 0;
     font-weight: 700;
     font-size: 15.76px;
     line-height: 24.5px;
     background-color: #FFD15B;
+    transition: transform .15s;
+}
+
+.header .subscribe:hover {
+    transform: translateY(-3.5px);
 }
 
 .header .subscribe .icon {
-    height: 22px;
-    margin-right: 4px;
+    height: 15.75px;
+    margin-right: 7px;
 }
 
 .header .subscribe .icon img {
@@ -253,23 +272,26 @@ a {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;
-    color: #000;
+    transition: color .15s;
+}
+
+.header .main-nav a:hover {
+    color: #ff7a50;
 }
 
 .header .main-subscribe {
     padding: 8px 16px;
-    color: #000;
     background-color: #FFD15B;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     border-radius: 38px;
+    translate: 3px 3px;
 }
 
 .hero {
     background-color: #FFF085;
     position: relative;
-    top: 0;
     z-index: 10;
     padding: 126px 0 56px;
 }
@@ -312,13 +334,11 @@ a {
 }
 
 .hero .container {
-    z-index: 12px;
     padding: 0 28px;
 }
 
 .hero .grid {
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, fit-content);
     gap: 56px;
 }
 
@@ -355,10 +375,6 @@ a {
     text-shadow: 3px 3px #000c;
 }
 
-.hero h1 .black {
-    color: #000;
-}
-
 .hero h1 .red {
     color: #E7000B;
 }
@@ -373,7 +389,6 @@ a {
     font-size: 21px;
     font-weight: 500;
     line-height: 28px;
-    color: #000;
     margin-bottom: 28px;
 }
 
@@ -383,12 +398,9 @@ a {
     font-weight: 700;
     line-height: 24.5px;
     border: 4px solid #000;
-    position: relative;
     transition-duration: .2s;
     transition-property: all;
-    box-shadow: 6px 6px #000;
-    word-spacing: 0px;
-    width: fit-content;
+    box-shadow: 5.25px 5.25px #000;
 }
 
 .hero .buttons button:hover {
@@ -402,7 +414,7 @@ a {
     margin-right: 14px;
 }
 
-.hero .buttons button:nth-child(2){
+.hero .buttons button:nth-child(2) {
     background-color: #fff;
 }
 
@@ -425,4 +437,186 @@ a {
     right: -20px;
     z-index: 10;
     transform: rotate(12deg);
+}
+
+.articles {
+    padding: 70px 0;
+}
+
+.articles .container {
+    padding: 0 21px;
+}
+
+.articles .grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, fit-content);
+    gap: 24px;
+}
+
+.articles h3 {
+    margin-bottom: 42px;
+    font-size: 42px;
+    font-weight: 900;
+    line-height: 42px;
+}
+
+.articles .articles-cards {
+    row-gap: 24px;
+}
+
+.articles .articles-head span {
+    background-color: #000;
+    padding: 7px 14px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 21px;
+    transform: rotate(2deg);
+}
+
+.articles .card {
+    padding: 28px;
+    border: 4px solid #000;
+    box-shadow: 4px 4px #000;
+    transition: .3s all;
+}
+
+.articles .card:hover {
+    translate: -2px -2px;
+    box-shadow: 6px 6px #000;
+}
+
+.articles .card-img {
+    width: 140px;
+    height: 112px;
+    position: relative;
+    margin-bottom: 10.5px;
+}
+
+.articles .card-img span {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    color: #fff;
+}
+
+.articles .card .badge {
+    font-size: 10.5px;
+    font-weight: 700;
+    line-height: 14px;
+    padding: 3.5px 7px;
+    width: fit-content;
+}
+
+.articles .new .card-img span {
+    background-color: #FB2C36;
+    transform: rotate(12deg);
+}
+
+.articles .hot .card-img span {
+    background-color: #2B7FFF;
+    transform: rotate(-12deg);
+}
+
+.articles .viral .card-img span {
+    background-color: #AD46FF;
+    transform: rotate(45deg);
+}
+
+
+.articles .card-info span {
+    margin-bottom: 10.5px;
+}
+
+.articles .new .card-info span {
+    background-color: #FFDF20;
+    transform: rotate(-1deg);
+}
+
+.articles .hot .card-info span {
+    background-color: #7BF1A8;
+    transform: rotate(1deg);
+}
+
+.articles .viral .card-info span {
+    background-color: #FDA5D5;
+    transform: rotate(-2deg);
+}
+
+.articles .card-info h4 {
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 10.5px;
+}
+
+.articles .new .card-info h4:hover {
+    color: #FB2C36;
+}
+
+.articles .hot .card-info h4:hover {
+    color: #2B7FFF;
+}
+
+.articles .viral .card-info h4:hover {
+    color: #AD46FF;
+}
+
+.articles .card-info p {
+    font-size: 15.75px;
+    line-height: 25.5px;
+    margin-bottom: 14px;
+}
+
+.articles .card-info .badge {
+    padding: 3.5px 10.5px;
+}
+
+.articles .info {
+    font-size: 12.25px;
+    font-weight: 600;
+    line-height: 17.5px;
+}
+
+.articles .love {
+    color: #E7000B;
+}
+
+.articles .status-icon {
+    height: 15px;
+    width: 15px;
+    margin-right: 7px;
+}
+
+.articles .load-articles {
+    margin: 36px auto 0; 
+}
+
+.articles .load-articles button {
+    padding: 12px 36px;
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 21px;
+    box-shadow: 4px 4px #000;
+}
+
+.articles .articles-info .card {
+    box-shadow: 6px 6px #000;
+}
+
+.articles .articles-info .card h4 {
+    font-size: 22.5px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    line-height: 27px;
+}
+
+.articles .articles-info {
+    gap: 24px;
+}
+
+.articles .articles-info .card:hover {
+    translate: 0;
 }

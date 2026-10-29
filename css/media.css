@@ -1,11 +1,28 @@
 /* sm */
-@media (min-width: 640px) {}
+@media (min-width: 640px) {
+    .sm-display-block {
+        display: block;
+    }
+
+    .sm-flex-row {
+        flex-direction: row;
+    }
+
+    .articles .card-info .flex {
+        flex-wrap: wrap;
+    }
+
+    .articles .info {
+        width: 50%;
+    }
+}
 
 /* width: 22.55%; */
 /* md */
 @media (min-width: 768px) {
     .header .logo a {
         font-size: 30px;
+        gap: 8px;
     }
 
     .header .container {
@@ -14,10 +31,62 @@
 
     .header .panel {
         padding: 12px 24px;
+        border-radius: 16px;
+    }
+
+    .header .mobile-menu-content {
+        max-width: 320px;
+    }
+
+    .header .menu-padding {
+        padding: 24px;
+        max-width: 320px;
+    }
+
+    .header .menu-header {
+        padding: 12px 0;
+        margin-bottom: 32px;
+    }
+
+    .header .menu-header span {
+        font-size: 24px;
+    }
+
+    .header .nav-menu {
+        gap: 24px;
+        margin-bottom: 32px;
+    }
+
+    .header .nav-menu a {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .header .subscribe {
+        padding: 12px 0;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .header .subscribe:hover {
+        transform: translateY(-4px);
+    }
+
+    .header .nav-menu a:hover {
+        transform: translateY(-4px);
+    }
+
+    .header .subscribe .icon {
+        height: 18px;
+        margin-right: 8px;
     }
 
     .hero {
         padding: 144px 0 64px;
+    }
+
+    .hero .grid {
+        gap: 64px;
     }
 
     .hero .container {
@@ -26,6 +95,8 @@
 
     .hero .trending {
         margin-bottom: 24px;
+        padding: 8px 16px;
+        line-height: 24px;
     }
 
     .hero .trending span {
@@ -42,6 +113,7 @@
         font-size: 24px;
         margin-bottom: 32px;
         line-height: 32px;
+        padding: 16px;
     }
 
     .hero .cubes span:nth-child(1) {
@@ -71,6 +143,22 @@
     .hero .buttons button {
         font-size: 20px;
         line-height: 28px;
+        padding: 16px 32px;
+        box-shadow: 6px 6px #000;
+    }
+
+    .hero .buttons button:hover {
+        translate: 6px 6px;
+        box-shadow: none
+    }
+
+    .hero .buttons button:nth-child(1) {
+        margin-right: 16px;
+    }
+
+    .hero .button-icon {
+        width: 20px;
+        margin-right: 8px;
     }
 
     .hero .banner {
@@ -80,6 +168,75 @@
     .hero .banner span {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .articles {
+        padding: 80px 0;
+    }
+
+    .articles .container {
+        padding: 0 24px;
+    }
+
+    .articles .grid {
+        gap: 32px;
+    }
+
+    .articles h3 {
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 48px;
+    }
+
+    .articles .card {
+        padding: 32px;
+    }
+
+    .articles .card-img {
+        width: 160px;
+        height: 128px;
+        margin-bottom: 12px;
+    }
+
+    .articles .card-img span {
+        top: -10px;
+        right: -10px;
+    }
+
+    .articles .card .badge {
+        font-size: 12px;
+        line-height: 16px;
+        padding: 4px 8px;
+    }
+
+    .articles .card-info span {
+        margin-bottom: 12px;
+    }
+
+    .articles .new .card-info h4 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 12px;
+    }
+
+    .articles .new .card-info p {
+        font-size: 18px;
+        line-height: 29.25px;
+        margin-bottom: 16px;
+    }
+
+    .articles .card-info .badge {
+        padding: 4px 12px;
+    }
+
+    .articles .articles-head span {
+        padding: 8px 16px;
+        line-height: 24px;
+        font-size: 16px;
+    }
+
+    .articles .info {
+        font-size: 12.25px;
     }
 }
 
@@ -93,6 +250,20 @@
 
     .hero .banner {
         transform: rotate(2deg);
+    }
+
+    .articles .card.grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+        "img info info";
+    }
+
+    .articles .card-img {
+        grid-area: img;
+    }
+
+    .articles .card-info {
+        grid-area: info;
     }
 }
 
@@ -113,6 +284,10 @@
     .container {
         max-width: 80rem;
         margin: auto;
+    }
+
+    .articles .info {
+        width: 25%;
     }
 }
 
