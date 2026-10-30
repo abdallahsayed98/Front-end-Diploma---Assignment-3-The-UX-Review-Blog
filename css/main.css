@@ -190,6 +190,8 @@ ul {
 .header .menu-toggle span {
     border: 1px solid #000;
     width: 50%;
+    height: 3px;
+    background-color: #000;
 }
 
 .header .mobile-menu-container {

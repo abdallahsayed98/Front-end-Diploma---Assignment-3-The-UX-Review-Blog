@@ -85,14 +85,16 @@
     .footer header {
         grid-column: span 2 / span 2;
     }
-
+    
     .footer .categories {
+        grid-row-start: 1;
         grid-column-start: 3;
     }
 
     .footer .newsletter {
         grid-column: span 2 / span 2;
         grid-column-start: 4;
+        grid-row-start: 1;
     }
 
 }
@@ -123,5 +125,10 @@
     .authors-cards {
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem
+    }
+
+    .footer .bottom {
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
