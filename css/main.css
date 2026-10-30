@@ -1201,3 +1201,7 @@ section header .line {
 .footer .bottom a {
     font-weight: 600;
 }
+
+.footer .bottom a:hover {
+    color: #FFDF20;
+}
