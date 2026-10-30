@@ -1,19 +1,5 @@
 html {
     font-size: 100%;
-    scroll-behavior: smooth;
-    scroll-padding-top: 52px;
-}
-
-@media (max-width: 767px) {
-    html {
-        font-size: 87.5%;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 75%;
-    }
 }
 
 * {
@@ -189,7 +175,7 @@ ul {
 
 .header .menu-toggle span {
     border: 1px solid #000;
-    width: 50%;
+    width: 55%;
     height: 3px;
     background-color: #000;
 }
@@ -387,7 +373,8 @@ ul {
 }
 
 .hero .button-icon {
-    width: 1em;
+    width: 1.25em;
+    height: 1.25rem;
     margin-right: .5rem;
 }
 
