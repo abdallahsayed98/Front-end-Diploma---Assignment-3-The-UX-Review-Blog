@@ -1158,6 +1158,11 @@ section header .line {
     color: #fff;
 }
 
+.footer input:focus {
+    border: 2px solid #FFDF20;
+    outline: none;
+}
+
 .footer form {
     gap: 1rem;
 }
